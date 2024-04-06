@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hava Durumu</title>
-    <link rel="stylesheet" href="main.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon" />
-  </head>
-  <body>
-    <div class="app">
-      <div class="header">
-        <h1>Hava Durumu</h1>
-        <i class="bx bxs-map"></i>
-        <input type="text" id="searchBar" placeholder="Şehir giriniz" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript ile Hava Durumu</title>
+  <link rel="stylesheet" href="main.css" />
+  <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+  <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon" />
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <h1>Hava Durumu</h1>
+      <i class="bx bxs-map"></i>
+      <input type="text" id="searchBar" placeholder="Şehir giriniz" />
+    </div>
+    <div class="content">
+      <div class="current-weather">
+        <div class="city">Şehir, TR</div>
+        <div class="temp">0°C</div>
+        <div class="desc">Güneşli</div>
+        <div class="min-max">-5°C / 5°C</div>
       </div>
-      <div class="content">
-        <div class="city hh">Şehir, TR</div>
-        <div class="temp hh">0°C</div>
-        <div class="gg hh">Güneşli</div>
-        <div class="minmax hh">-5°C / 5°C</div>
+      <div class="forecast">
+        <h2>5 Günlük Tahminler</h2>
+        <div class="forecast-data"></div>
       </div>
     </div>
-    <footer>
-      <p>&copy; 2024 Blody. Tüm hakları saklıdır.</p>
-    </footer>
-    <script src="app.js"></script>
-  </body>
+  </div>
+  <footer>
+    <p>&copy; 2024 Blody. Tüm hakları saklıdır.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
 </html>
